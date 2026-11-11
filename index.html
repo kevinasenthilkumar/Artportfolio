@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aanya Creates | Art Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<header class="navbar">
+  <div class="logo">🎨 kevina <span>Creates</span></div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Hand‑painted • Sketches • Illustrations</p>
+    <h1>Colors Tell <span>Stories</span><br>I Just Hold the Brush.</h1>
+    <p class="hero-sub">A growing collection of watercolor, acrylic, pencil and digital art — painted one layer of imagination at a time.</p>
+    <div class="hero-buttons">
+      <a href="#gallery" class="btn btn-primary">View Gallery</a>
+      <a href="#contact" class="btn btn-ghost">Say Hello</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="ring"></div>
+    <img src="assets/profile.jpeg" alt="Artist portrait">
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80" alt="Art supplies">
+  </div>
+  <div class="about-text">
+    <h2>About the <span>Artist</span></h2>
+    <p>I'm a self‑taught artist who finds joy in turning blank pages into little worlds — from coral reefs and tigers to mythology and quiet city streets. Every piece here is made with watercolor, acrylic, pencil, or marker, mixing realism with a love for bold, saturated color.</p>
+    <div class="stats">
+      <div class="stat">
+        <h3>12+</h3>
+        <p>Artworks</p>
+      </div>
+      <div class="stat">
+        <h3>5</h3>
+        <p>Mediums</p>
+      </div>
+      <div class="stat">
+        <h3>2+</h3>
+        <p>Years Painting</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2>My <span>Gallery</span></h2>
+  <p class="section-sub">A peek into the sketchbook — click through the colors, textures and stories.</p>
+
+  <div class="gallery-grid">
+    <figure class="gallery-item" data-tag="Watercolor">
+      <img src="assets/art-clownfish.jpeg" alt="Clownfish watercolor painting">
+      <figcaption>Clownfish Reef</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Gouache">
+      <img src="assets/art-autumn-house.jpeg" alt="Autumn house painting">
+      <figcaption>Autumn Bridge</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Fan Art">
+      <img src="assets/art-doraemon.jpeg" alt="Doraemon and Nobita drawing">
+      <figcaption>Best Friends</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Mixed Media">
+      <img src="assets/art-flower.jpeg" alt="Red flower painting">
+      <figcaption>Bloom</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Illustration">
+      <img src="assets/art-door-water.jpeg" alt="Floating door surreal painting">
+      <figcaption>The Flooded Door</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Pencil">
+      <img src="assets/art-face-sketch.jpeg" alt="Pencil sketch of a face">
+      <figcaption>Quiet Gaze</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Pencil">
+      <img src="assets/art-tiger.jpeg" alt="Tiger pencil sketch">
+      <figcaption>Tiger Study</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Acrylic">
+      <img src="assets/art-mountains.jpeg" alt="Mountain landscape painting">
+      <figcaption>Golden Ridge</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Acrylic">
+      <img src="assets/art-african-women.jpeg" alt="African women silhouette painting">
+      <figcaption>Sunset Walk</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Watercolor">
+      <img src="assets/art-butterfly.jpeg" alt="Monarch butterfly painting">
+      <figcaption>Monarch</figcaption>
+    </figure>
+    <figure class="gallery-item" data-tag="Marker">
+      <img src="assets/art-radha-krishna.jpeg" alt="Radha Krishna illustration">
+      <figcaption>Radha Krishna</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's <span>Create</span> Together</h2>
+  <p class="section-sub">Commissions, collabs, or just art‑talk — my inbox is always open.</p>
+  <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-status').textContent='Thanks! I\'ll get back to you soon 🎨';">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Tell me about your idea..." required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+    <p class="form-status"></p>
+  </form>
+</section>
+
+<footer>
+  <p>Made with 🎨 &amp; ☕ — kevina Creates © 2026</p>
+</footer>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.gallery-item, .about-img, .about-text, .stat').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
